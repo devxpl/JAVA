@@ -1,16 +1,19 @@
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Interface {
 public static void main(String[] args) {
+    Scanner leitor = new Scanner(System.in);
     int opcao;
-
         Menu menu = new Menu();
-        Pessoa pessoa = new Pessoa();
-        Aluno aluno = new Aluno();
-        Professor professor = new Professor();
-        Funcionario funcionario = new Funcionario();
-        Scanner leitor = new Scanner(System.in);
+        ArrayList<Aluno> aluno = new ArrayList<Aluno>();
+        ArrayList<Professor> professor = new ArrayList<Professor>();
+        ArrayList<Funcionario> funcionario = new ArrayList<Funcionario>();
+        Tecnico  tecnico = new Tecnico();
+        Bolsista bolsista = new Bolsista();
+
+
 
       do {
         menu.menu();
@@ -18,13 +21,10 @@ public static void main(String[] args) {
 
           switch(opcao){
             case 1 :
-
+              case 2 :
             break;
-            case 2 :
-
-
             case 3 :
-
+            break;
             case 4 :
             System.out.println("Finalizando....");
             break;

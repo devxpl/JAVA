@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Pessoa{
+public abstract class Pessoa{
     String nome;
     int idade;
     String sexo;
@@ -30,9 +30,7 @@ public class Pessoa{
     }
 
 public void fazerAniversario(){
-
 }
-
 
     @Override
     public String toString() {
