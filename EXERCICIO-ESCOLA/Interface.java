@@ -9,7 +9,6 @@ public static void main(String[] args) {
         Menu menu = new Menu();
         Tecnico  tecnico = new Tecnico();
         Bolsista bolsista = new Bolsista();
-
       do {
         menu.menu();
         opcao = leitor.nextInt();

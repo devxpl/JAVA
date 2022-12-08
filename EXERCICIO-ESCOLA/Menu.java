@@ -4,11 +4,8 @@ import java.util.Scanner;
 
 public class Menu {
     ArrayList<Aluno> aluno = new ArrayList<>();
-    Aluno newAluno = new Aluno();
     ArrayList<Professor> professor = new ArrayList<Professor>();
-    Professor newProfessor = new Professor();
     ArrayList<Funcionario> funcionario = new ArrayList<Funcionario>();
-    Funcionario newFuncionario = new Funcionario();
     Scanner leitor = new Scanner(System.in);
  public void menu(){
      System.out.println(" 1 - Cadastrar Aluno");
@@ -25,6 +22,7 @@ public class Menu {
 
  public void cadastroAluno(){
      //* metodo para cadastrar alunos
+     Aluno newAluno = new Aluno();
 
      System.out.println(" NOME ALUNO : ");
      String nomeAluno = leitor.next();
@@ -47,6 +45,7 @@ public class Menu {
 
 public void cadastroProfessor(){
      //* metodo para cadastrar professores
+    Professor newProfessor = new Professor();
 
     System.out.println(" NOME PROFESSOR : ");
     String nomeProfessor = leitor.next();
@@ -68,6 +67,7 @@ public void listarProfessores(){
 }
 public void cadastroFuncionario() {
     //* metodo para cadastrar os funcionarios da escola
+    Funcionario newFuncionario = new Funcionario();
 
     System.out.println(" NOME ALUNO : ");
     String nomeFuncionario = leitor.next();
