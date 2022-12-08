@@ -34,7 +34,7 @@ public void fazerAniversario(){
 
     @Override
     public String toString() {
-        return "Pessoa [nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + "]";
+        return "Dados [nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + "]";
     }
 
 
