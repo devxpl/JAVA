@@ -17,24 +17,21 @@ public static void main(String[] args) {
           switch(opcao){
               case 1 :
                       menu.cadastroAluno();
-                      menu.listarAlunos();
               break;
               case 2 :
                       menu.cadastroProfessor();
-                      menu.listarProfessores();
               break;
               case 3 :
                       menu.cadastroFuncionario();
-                      menu.listarFuncionarios();
                break;
               case 4 :
-                        //* listarAlunos cadastrados no sistema
+                      menu.listarAlunos();
               break;
               case 5 :
-                       //* listarProfessores  cadastrados no sistema
+                      menu.listarProfessores();
               break;
               case 6 :
-                      //* listarFuncionarios  cadastrados no sistema
+                      menu.listarFuncionarios();
               break;
               case 7 :
                       //* buscarAluno cadastrado no sistema

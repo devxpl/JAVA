@@ -3,6 +3,12 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Menu {
+    ArrayList<Aluno> aluno = new ArrayList<>();
+    Aluno newAluno = new Aluno();
+    ArrayList<Professor> professor = new ArrayList<Professor>();
+    Professor newProfessor = new Professor();
+    ArrayList<Funcionario> funcionario = new ArrayList<Funcionario>();
+    Funcionario newFuncionario = new Funcionario();
     Scanner leitor = new Scanner(System.in);
  public void menu(){
      System.out.println(" 1 - Cadastrar Aluno");
@@ -17,11 +23,8 @@ public class Menu {
      System.out.println(" 10 - Sair");
  }
 
-
  public void cadastroAluno(){
      //* metodo para cadastrar alunos
-     ArrayList<Aluno> aluno = new ArrayList<Aluno>();
-     Aluno newAluno = new Aluno();
 
      System.out.println(" NOME ALUNO : ");
      String nomeAluno = leitor.next();
@@ -35,30 +38,23 @@ public class Menu {
      String generoAluno = leitor.next();
      newAluno.setSexo(generoAluno);
      aluno.add(newAluno);
-
-     System.out.println(aluno);
-
  }
  public void listarAlunos (){
      //*criar metodo para listar todos os alunos que foram cadastrados.
-
+     System.out.println(aluno);
  }
 
 
 public void cadastroProfessor(){
      //* metodo para cadastrar professores
-    ArrayList<Professor> professor = new ArrayList<Professor>();
-    Professor newProfessor = new Professor();
 
     System.out.println(" NOME PROFESSOR : ");
     String nomeProfessor = leitor.next();
     newProfessor.setNome(nomeProfessor);
 
-
     System.out.println(" IDADE PROFESSOR : ");
     int idadeProfessor = leitor.nextInt();
     newProfessor.setIdade(idadeProfessor);
-
 
     System.out.println(" GENERO PROFESSOR : ");
     String generoProfessor = leitor.next();
@@ -68,31 +64,27 @@ public void cadastroProfessor(){
 }
 public void listarProfessores(){
      //* criar metodo para listar todos os professores que foram cadastrado
+     System.out.println(professor);
 }
-public void cadastroFuncionario(){
-     //* metodo para cadastrar os funcionarios da escola
-    ArrayList<Funcionario> funcionario = new ArrayList<Funcionario>();
-    Funcionario newFuncionario = new Funcionario();
+public void cadastroFuncionario() {
+    //* metodo para cadastrar os funcionarios da escola
 
     System.out.println(" NOME ALUNO : ");
     String nomeFuncionario = leitor.next();
     newFuncionario.setNome(nomeFuncionario);
 
-
     System.out.println(" IDADE FUNCIONARIO : ");
     int idadeFuncionario = leitor.nextInt();
     newFuncionario.setIdade(idadeFuncionario);
-
 
     System.out.println(" GENERO FUNCIONARIO : ");
     String generoFuncionario = leitor.next();
     newFuncionario.setSexo(generoFuncionario);
     funcionario.add(newFuncionario);
-
 }
 public void listarFuncionarios(){
      //*criar metodo para listar todos os funcionarios cadastrados
+    System.out.println(funcionario);
 }
-
 
 }
