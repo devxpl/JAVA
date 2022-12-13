@@ -1,5 +1,4 @@
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Interface {
@@ -7,6 +6,7 @@ public static void main(String[] args) {
     Scanner leitor = new Scanner(System.in);
     int opcao;
         Menu menu = new Menu();
+        Professor professor = new Professor();
         Tecnico  tecnico = new Tecnico();
         Bolsista bolsista = new Bolsista();
       do {
@@ -19,6 +19,7 @@ public static void main(String[] args) {
               break;
               case 2 :
                       menu.cadastroProfessor();
+                      professor.receberAumento();
               break;
               case 3 :
                       menu.cadastroFuncionario();
@@ -33,13 +34,13 @@ public static void main(String[] args) {
                       menu.listarFuncionarios();
               break;
               case 7 :
-                      //* buscarAluno cadastrado no sistema
+                      menu.buscarAluno();
               break;
               case 8 :
-                       //* buscarProfessor cadastrado no sistema
+                      menu.buscarProfessor();
               break;
               case 9 :
-                       //* buscarFuncionarios cadastrado no sistema
+                     menu.buscarFuncionarios();
               break;
               case 10 :
                   System.out.println("Finalizando....");

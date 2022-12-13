@@ -1,4 +1,4 @@
-public class Tecnico extends Aluno {
+public class Tecnico extends Alunos {
     public void registroProfissional(){
 
     }
